@@ -1,5 +1,5 @@
 import { React } from 'react'
-import Poster from '../assets/mememania.png'; 
+// import Poster from '../assets/mememania.png'; 
 import './NewEvents.css';
 import { Link } from 'react-router-dom';
 import Fade from 'react-reveal/Fade';
