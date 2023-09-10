@@ -20,8 +20,8 @@ export default function newEvents(props) {
               <li>Timing: ...</li>
               <li>Venue: ...</li>
             </ul> */}
-            <Link to='/register'>
-              <button className='register-btn' style={{'display':props.display}}  disabled>Register</button>
+            <Link to='/'>
+              <button className='register-btn' style={{'display':props.display}}  >Register</button>
             </Link>
           </div>
         </Fade>
