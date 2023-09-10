@@ -27,7 +27,7 @@ const ObjectiveComponent = () => {
         <Fade bottom>
           <div className="cards-container">
               {objectives.map((objective, index) => (
-                <div className="card" key={index}>
+                <div className="card1" key={index}>
                   <h2 style={{'fontSize':'1.4rem'}}>{objective.title}</h2>
                   <p style={{'fontSize':'1.1rem'}}>{objective.description}</p>
                 </div>

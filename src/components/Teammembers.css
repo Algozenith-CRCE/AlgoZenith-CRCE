@@ -20,27 +20,7 @@
     justify-content: space-between; 
     gap: 75px;
   }
-  
-  /* .card {
-    flex: 1;
-    min-width: calc(25% - 10px); 
-    width: calc(25% - 10px);
-    background-color: white;
-    border: 1px solid #e1e1e1;
-    border-radius: 10px;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    text-align: center;
-    margin: 10px;
-    padding: 30px 5px;
-  }
 
-  .card-circle {
-    background-color: #ddf1fff7;
-    padding: 20px 0px;
-    width: 100%;
-    border-radius: 48%;
-  } */
   
   .card {
     flex: 1;
@@ -49,12 +29,12 @@
     background-color: white;
     border: 1px solid #e1e1e1;
     border-radius: 10px;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 15px rgb(130, 172, 235);
     overflow: hidden;
     text-align: center;
     margin: 10px;
     padding: 30px 5px;
-    transition: width 0.3s; /* Add a transition for width change */
+    transition: width 0.3s;
   }
   
   .card-circle {
