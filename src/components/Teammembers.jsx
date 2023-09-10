@@ -33,7 +33,7 @@ const TeamMembersComponent = () => {
       linkedinLink: 'https://www.linkedin.com/in/punit-giri',
     },
     {
-      name: 'Aarom Pereira',
+      name: 'Aaron Pereira',
       position: 'Event Co-ordinator',
       photoUrl: aaron,
       instagramLink: 'https://instagram.com/aaron_pereira__?igshid=OGQ5ZDc2ODk2ZA==',

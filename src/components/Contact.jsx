@@ -26,8 +26,8 @@ function ContactForm() {
       <h2 className="center events-title" style={{'fontWeight':'300'}}>Contact Us</h2>
       <div className="contact-details">
         <div className="contact-detail left">
-          <span>Phone:</span>
-          <span>+91 7249735828</span>
+          <span>Phone:+91 7249735828</span>
+          {/* <span></span> */}
         </div>
         <div className="contact-detail right">
           <span>Email:</span>

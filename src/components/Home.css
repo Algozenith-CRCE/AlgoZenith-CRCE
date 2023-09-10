@@ -65,7 +65,7 @@
 
 @media (max-width: 48em) {
   .content-container {
-    margin: 0px;
+    margin-right: 10px;
     width: 80vw;
   }
 
