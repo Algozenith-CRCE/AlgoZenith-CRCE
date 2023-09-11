@@ -36,7 +36,7 @@ function App() {
             </Fade>  
           </>
         }/>
-        <Route exact path='/register' element={
+        {/* <Route exact path='/register' element={
           <>
             <BackBtn />
             <Fade bottom>
@@ -44,7 +44,7 @@ function App() {
               <Register />
             </Fade>
           </>
-        }/>
+        }/> */}
         
       </Routes>
       <Footer />
