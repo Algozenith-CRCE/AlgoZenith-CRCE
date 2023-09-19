@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Contact.css'; 
+import { FaPhone,FaEnvelope } from "react-icons/fa6";
 
 function ContactForm() {
   const [formData, setFormData] = useState({
@@ -26,12 +27,10 @@ function ContactForm() {
       <h2 className="center events-title" style={{'fontWeight':'300'}}>Contact Us</h2>
       <div className="contact-details">
         <div className="contact-detail left">
-          <span>Phone:+91 7249735828</span>
-          {/* <span></span> */}
+          <span><FaPhone style={{"fontSize":"0.8rem"}}/> +91 7249735828</span>
         </div>
         <div className="contact-detail right">
-          <span>Email:</span>
-          <span>crce.algozenith@gmail.com</span>
+          <span><FaEnvelope style={{"fontSize":"0.8rem","marginRight":"5px"}}/> crce.algozenith@gmail.com</span>
         </div>
       </div>
       <form className="form" action="https://formsubmit.co/crce.algozenith@gmail.com" method="POST">

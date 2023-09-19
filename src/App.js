@@ -9,9 +9,9 @@ import {
   Routes,
   Route
 } from 'react-router-dom'
-import Register from './components/Register';
-import NewEvents from './components/NewEvents';
-import BackBtn from './components/BackBtn';
+// import Register from './components/Register';
+// import NewEvents from './components/NewEvents';
+// import BackBtn from './components/BackBtn';
 import ScrollTop from './components/ScrollTop';
 import Contact from './components/Contact';
 import  ScrollToTop  from "react-scroll-to-top";

@@ -27,14 +27,16 @@ function Register() {
     e.preventDefault();
     console.log(formData);
 
-        if(formData.name==='' || formData.email==='' || formData.phoneNumber==='' || formData.rollNumber==='' || formData.year==='' || formData.branch==='')
+    if(formData.name==='' || formData.email==='' || formData.phoneNumber==='' || formData.rollNumber==='' || formData.year==='' || formData.branch==='')
+    {
+      alert("Some fields are incomplete");
+    }
+    else{
+      try{
+        /*eslint-disable*/ 
+        const docRef = addDoc(collection(db,"collections"), 
+        /*eslint-enable*/ 
         {
-          alert("Some fields are incomplete");
-        }
-        else{
-          try{
-            const docRef = addDoc(collection(db,"collections"),
-            {
               name:formData.name,
               email:formData.email,
               phoneNumber:formData.phoneNumber,

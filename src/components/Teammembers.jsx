@@ -7,7 +7,8 @@ import rudalph from '../assets/rudalph.png';
 import nathan from '../assets/nathan.png';
 import punit from '../assets/punit.png';
 import { FaInstagram, FaLinkedin } from 'react-icons/fa';
-import Fade from 'react-reveal/Fade';
+// import Fade from 'react-reveal/Fade';
+import Zoom from 'react-reveal/Zoom';
 
 const TeamMembersComponent = () => {
   const teamMembers = [
@@ -57,30 +58,32 @@ const TeamMembersComponent = () => {
 
   return (
     <div className="team-members-container" id="team">
-      <Fade bottom>
+      
         <h1 className="events-title" style={{'fontWeight':'300'}}>Team Members</h1>
         <div className="cards-container">
           {teamMembers.map((member, index) => (
-            <div className="card" key={index}>
-              <div className='card-circle'>
-                <div className="member-photo">
-                  <img src={member.photoUrl} alt='member' />
-                </div>
-                <h2>{member.name}</h2>
-                <p>{member.position}</p>
-                <div className="social-icons">
-                  <a href={member.instagramLink} target="_blank" rel="noopener noreferrer">
-                    <FaInstagram className="icon instagram-icon" />
-                  </a>
-                  <a href={member.linkedinLink} target="_blank" rel="noopener noreferrer">
-                    <FaLinkedin className="icon linkedin-icon" />
-                  </a>
+            <Zoom>
+              <div className="card" key={index}>
+                <div className='card-circle'>
+                  <div className="member-photo">
+                    <img src={member.photoUrl} alt='member' />
+                  </div>
+                  <h2>{member.name}</h2>
+                  <p>{member.position}</p>
+                  <div className="social-icons">
+                    <a href={member.instagramLink} target="_blank" rel="noopener noreferrer">
+                      <FaInstagram className="icon instagram-icon" />
+                    </a>
+                    <a href={member.linkedinLink} target="_blank" rel="noopener noreferrer">
+                      <FaLinkedin className="icon linkedin-icon" />
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
+            </Zoom>
           ))}
         </div>
-      </Fade>
+      
     </div>
   );
 };
