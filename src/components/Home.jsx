@@ -1,8 +1,10 @@
 import React from 'react'
 import './Home.css'
-import graphic from '../assets/code.png'
+// import graphic from '../assets/code.png'
+import animation from '../assets/codingAnime.json'
 import { Link } from 'react-scroll';
 import Fade from 'react-reveal/Fade';
+import Lottie from 'lottie-react';
 
 export default function Home() {
   return (
@@ -25,7 +27,8 @@ export default function Home() {
         </span>
         </div>
         <div className='image-container'>
-          <img src={graphic} alt="coding graphic" className='coding-image'/>
+          <Lottie animationData={animation} className='coding-image'/>
+          {/* <img src={animation} alt="coding graphic" className='coding-image'/> */}
         </div>
         </Fade>
       </div>

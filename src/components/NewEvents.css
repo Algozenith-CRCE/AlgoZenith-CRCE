@@ -70,6 +70,18 @@
   margin: 0;
 }
 
+.coming-image {
+  width: 250px;
+  height: 250px;
+} 
+
+@media (max-width:760px) {
+  .coming-image {
+    display: none;
+  }
+}
+
+
 @media (max-width:48em) {
   .poster-container {
     width:90vw;

@@ -12,7 +12,7 @@ export default function Footer() {
         <a href='/'><img src={whiteLogo} alt='logo' className='white-logo'/></a>
         </div>
         <div className='links-container'>
-          <p><strong>Usefull Links</strong></p>
+          <p><strong style={{'fontSize':'18px'}}>Usefull Links</strong></p>
           <p ><Link to='home' spy={true} smooth={true} offset={-100} duration={500} className='link'>Home</Link></p>
           <p ><Link to='events' spy={true} smooth={true} offset={-100} duration={500} className='link' >Events</Link></p>
           <p ><Link to='team' spy={true} smooth={true} offset={-100} duration={500} className='link'>Team Members</Link></p>
