@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Contact.css'; 
 import { FaPhone,FaEnvelope } from "react-icons/fa6";
+import Zoom from 'react-reveal/Zoom';
 
 function ContactForm() {
   const [formData, setFormData] = useState({
@@ -22,8 +23,9 @@ function ContactForm() {
   //   console.log(formData);
   // };
 
-  return (
+  return (    
     <div className="contact-form-container" id='contact'>
+    <Zoom>
       <h2 className="center events-title" style={{'fontWeight':'300'}}>Contact Us</h2>
       <div className="contact-details">
         <div className="contact-detail left">
@@ -34,6 +36,7 @@ function ContactForm() {
         </div>
       </div>
       <form className="form" action="https://formsubmit.co/crce.algozenith@gmail.com" method="POST">
+      <Zoom>
         <input
           type="text"
           name="name"
@@ -76,7 +79,9 @@ function ContactForm() {
           className="input-field"
         />
         <button type="submit" className="submit-button register">Submit</button>
+      </Zoom>
       </form>
+    </Zoom>
     </div>
   );
 }

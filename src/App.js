@@ -21,7 +21,7 @@ import Fade from 'react-reveal/Fade';
 function App() {
   return (
     <Router>  
-      <ScrollToTop smooth class="scroll-to-top-button" color='navy'/>
+      <ScrollToTop smooth class="scroll-to-top-button" color='navy' width='20px' height='20px' />
       <ScrollTop /> 
       <Navbar/>
       <Routes>
@@ -32,8 +32,8 @@ function App() {
               <Objective />
               <Events />
               <Teammember />
+            </Fade>
               <Contact />
-            </Fade>  
           </>
         }/>
         {/* <Route exact path='/register' element={

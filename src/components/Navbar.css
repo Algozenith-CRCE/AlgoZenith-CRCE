@@ -22,7 +22,7 @@
   text-decoration: none;
 }
 
-.header li a:hover,
+.scroll-link:hover,
 .header .menu-btn:hover {
   cursor: pointer;
   transition: 0.4s ease;

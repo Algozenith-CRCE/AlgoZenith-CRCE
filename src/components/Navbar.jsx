@@ -33,7 +33,8 @@ function Navbar() {
               offset={-200}
               duration={500}
               onSetActive={handleSetActive}
-              style={{ color: activeSection === "home" ? "#0077ff" : "#4fa9f2" }}
+              style={{ color: activeSection === "home" ? "#0077ff" : " ", transition: "color 0.3s ease"  }}
+              className="scroll-link"
             >
               Home
             </ScrollLink>
@@ -46,7 +47,8 @@ function Navbar() {
               offset={-150}
               duration={500}
               onSetActive={handleSetActive}
-              style={{ color: activeSection === "objectives" ? "#0077ff" : "#4fa9f2" }}
+              style={{ color: activeSection === "objectives" ? "#0077ff" : " ", transition: "color 0.3s ease" }}
+              className="scroll-link"
             >
               Objectives
             </ScrollLink>
@@ -59,7 +61,8 @@ function Navbar() {
               offset={-180}
               duration={500}
               onSetActive={handleSetActive}
-              style={{ color: activeSection === "events" ? "#0077ff" : "#4fa9f2" }}
+              style={{ color: activeSection === "events" ? "#0077ff" : " ", transition: "color 0.3s ease" }}
+              className="scroll-link"
             >
               Events
             </ScrollLink>
@@ -72,7 +75,8 @@ function Navbar() {
               offset={-200}
               duration={500}
               onSetActive={handleSetActive}
-              style={{ color: activeSection === "team" ? "#0077ff" : "#4fa9f2" }}
+              style={{ color: activeSection === "team" ? "#0077ff" : " ", transition: "color 0.3s ease" }}
+              className="scroll-link"
             >
               Team Members
             </ScrollLink>
@@ -85,7 +89,8 @@ function Navbar() {
               offset={-200}
               duration={500}
               onSetActive={handleSetActive}
-              style={{ color: activeSection === "contact" ? "#0077ff" : "#4fa9f2" }}
+              style={{ color: activeSection === "contact" ? "#0077ff" : " ", transition: "color 0.3s ease" }}
+              className="scroll-link"
             >
               Contact
             </ScrollLink>
