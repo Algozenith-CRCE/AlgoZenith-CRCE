@@ -3,8 +3,8 @@ import { React } from 'react'
 import './NewEvents.css';
 import { Link } from 'react-router-dom';
 import Fade from 'react-reveal/Fade';
-// import comingSoon from '../assets/comingSoon.png'
-import newEvent from '../assets/suspenseStory.mp4'
+import comingSoon from '../assets/comingSoon.png'
+// import newEvent from '../assets/suspenseStory.mp4'
 import Lottie from 'lottie-react';
 import Timer from '../assets/comingAnime.json'
 
@@ -14,7 +14,7 @@ export default function newEvents(props) {
       <div className='wrap-register' style={{'marginTop':props.margin}}>
         <Fade bottom>
           <div className='poster-container'>
-            <video src={newEvent} alt="Event-Poster" className='event-poster' autoPlay loop/>
+            <img src={comingSoon} alt="Event-Poster" className='event-poster'/>
           </div>
           <div className='register-div'>
             <Lottie animationData={Timer} className='coming-image'/>
