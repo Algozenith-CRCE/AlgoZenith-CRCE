@@ -58,18 +58,33 @@
 @media (max-width:1110px) {
   .wrap-card {
     margin: 15px 0px;
+    width:40vw;
+  }
+  .card-image-container {
+    margin: 0;
+    padding: 0;
+    width: 15vw;
+  }
+
+  .card-content {
+    margin: 0;
+    /* width: 45vw; */
+  }
+}
+
+@media (max-width:750px) {
+  .wrap-card {
+    margin: 15px 0px;
     width:90vw;
   }
   .card-image-container {
     margin: 0;
     padding: 0;
-    width: 30vw;
+    width: 35vw;
   }
 
   .card-content {
     margin: 0;
     width: 45vw;
   }
-
-
 }

@@ -26,7 +26,7 @@ function ContactForm() {
   return (    
     <div className="contact-form-container" id='contact'>
     <Zoom>
-      <h2 className="center events-title" style={{'fontWeight':'300'}}>Contact Us</h2>
+      <h2 className="center events-title" style={{'fontWeight':'300'}}><strong>CONTACT US</strong></h2>
       <div className="contact-details">
         <div className="contact-detail left">
           <span><FaPhone style={{"fontSize":"0.8rem"}}/> +91 7249735828</span>

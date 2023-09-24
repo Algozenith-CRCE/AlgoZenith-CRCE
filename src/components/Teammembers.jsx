@@ -59,7 +59,7 @@ const TeamMembersComponent = () => {
   return (
     <div className="team-members-container" id="team">
       
-        <h1 className="events-title" style={{'fontWeight':'300'}}>Team Members</h1>
+        <h1 className="events-title" style={{'textAlign':'center'}}><strong>TEAM MEMBERS</strong></h1>
         <div className="cards-container">
           {teamMembers.map((member, index) => (
             <Zoom>

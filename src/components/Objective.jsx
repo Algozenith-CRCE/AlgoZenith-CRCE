@@ -24,7 +24,7 @@ const ObjectiveComponent = () => {
 
   return (
     <div className="objective-container" id='objectives'>
-        <h1 className="events-title" style={{'fontSize':'2rem','paddingBottom':'5px','fontWeight':500}}>Objectives</h1>
+        <h1 className="events-title" style={{'fontSize':'2rem','paddingBottom':'5px','fontWeight':500}}><strong>OBJECTIVES</strong></h1>
         <Fade bottom>
           <div className="obj-cards-container">
               {objectives.map((objective, index) => (
