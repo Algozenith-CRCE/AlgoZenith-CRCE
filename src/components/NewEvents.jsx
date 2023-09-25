@@ -1,7 +1,7 @@
 import { React } from 'react'
 // import Poster from '../assets/mememania.png'; 
-import './NewEvents.css';
 import { Link } from 'react-router-dom';
+import './NewEvents.css';
 import Fade from 'react-reveal/Fade';
 import ss from '../assets/unleashed.jpeg'
 // import Lottie from 'lottie-react';
@@ -19,9 +19,10 @@ export default function newEvents(props) {
             {/* <Lottie animationData={Timer} className='coming-image'/> */}
             <p className='event-name'>Day 1</p>
             <ul>
-              <li>UI/UX webinar</li>
+              <li>UI/UX Webinar</li>
               <li>Speaker: Vanshita Singh<br/>(UX Designer-Cervello)</li>
               <li>Date / Time: 30<sup>th</sup> September, 7 PM</li>
+              <li>Link: <a href='https://meet.google.com/dvi-gror-jff' style={{'textDecoration': 'underline'}}>https://meet.google.com/dvi-gror-jff</a></li>
             </ul>
             <p className='event-name'>Day 2</p>
             <ul>
@@ -29,8 +30,8 @@ export default function newEvents(props) {
               <li>Start: 1<sup>st</sup> October, 7 AM</li>
               <li>Deadline: 2<sup>nd</sup> October, 7 AM</li>
             </ul>
-            <Link to='/' className='btn-wrap'>
-              <button className='register-btn' style={{'display':props.display,'width':'200px'}}  >Registration shall begin soon</button>
+            <Link to='/register' className='btn-wrap'>
+              <button className='register-btn' style={{'display':props.display}}  >Register</button>
             </Link>
             <p className='events-des'>Problem Statement will be released on our website soon & submission will be accepted through attached Google Form only.</p>
           </div>

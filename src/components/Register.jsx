@@ -25,7 +25,7 @@ function Register() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formData);
+    // console.log(formData);
 
     if(formData.name==='' || formData.email==='' || formData.phoneNumber==='' || formData.rollNumber==='' || formData.year==='' || formData.branch==='')
     {
@@ -44,15 +44,22 @@ function Register() {
               year:formData.year,
               branch:formData.branch,
             
-            });
-            console.log("successfully data stored")
+        });
             alert("Registration successful")
+            setFormData({
+              name: '',
+              email: '',
+              phoneNumber: '',
+              rollNumber: '',
+              year: '',
+              branch:''
+            });
         } catch(e)
         {
-        console.log("Couldnot store data")
+          console.log("Couldnot store data")
         }
         };
-       }
+  }
           
 
     
@@ -91,13 +98,14 @@ function Register() {
           <div className="inline-fields">
             <input
               type="number"
-              name="roll-no"
+              name="rollNumber"
               placeholder="Roll No.(4-digit)"
+              value={formData.rollNumber}
               onChange={(event)=>setFormData((prev) => ({...prev, rollNumber: event.target.value}))}
               className="i-field"
             />
             
-            <select name="year" id="year" className='s-field' onChange={(event)=>setFormData((prev) => ({...prev, year: event.target.value}))}>
+            <select name="year" id="year" className='s-field' value={formData.year} onChange={(event)=>setFormData((prev) => ({...prev, year: event.target.value}))}>
               <option disabled selected value="">Select a year</option>
               <option value="FE">FE</option>
               <option value="SE">SE</option>
@@ -105,7 +113,7 @@ function Register() {
               <option value="BE">BE</option>
             </select> 
             
-            <select name="branch" id="branch" className='s-field' onChange={(event)=>setFormData((prev) => ({...prev, branch: event.target.value}))}>
+            <select name="branch" id="branch" className='s-field' value={formData.branch} onChange={(event)=>setFormData((prev) => ({...prev, branch: event.target.value}))}>
               <option disabled selected value="">Select a Branch</option>
               <option value="ComputerA">Computer A</option>
               <option value="ComputerB">Computer B</option>
@@ -114,8 +122,7 @@ function Register() {
               <option value="Mechanical">Mechanical</option>
             </select>
           </div>
-          
-        <button type="submit" className="sub-button">Submit</button>
+          <button type="submit" className="sub-button" >Submit</button>
         </form>
       </div>
     </Fade>

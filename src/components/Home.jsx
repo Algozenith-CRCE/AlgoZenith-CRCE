@@ -3,6 +3,7 @@ import './Home.css'
 // import graphic from '../assets/code.png'
 import animation from '../assets/codingAnime.json'
 import { Link } from 'react-scroll';
+import { Link as RouteLink } from 'react-router-dom';
 import Fade from 'react-reveal/Fade';
 import Lottie from 'lottie-react';
 
@@ -20,9 +21,9 @@ export default function Home() {
             <button className='register'>Know More</button>
           </Link>
           
-          <Link to="events" spy={true} smooth={true} offset={-100} duration={500}>
-            <button className='register'>Register</button>
-          </Link>
+          <RouteLink to="/register" spy={true} smooth={true} offset={-100} duration={500}>
+            <button className='register' style={{'width':'230px'}}>Register for Unleashed</button>
+          </RouteLink>
           
         </span>
         </div>
