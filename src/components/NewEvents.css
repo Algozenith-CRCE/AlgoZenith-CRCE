@@ -96,7 +96,7 @@
 
 @media (max-width: 1265px) {
   .wrap-register {
-    width: 90vw;
+    /* width: 90vw; */
     align-items: center;
     justify-content: space-evenly;
   }
