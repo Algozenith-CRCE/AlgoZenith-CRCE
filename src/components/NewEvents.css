@@ -100,13 +100,14 @@
     align-items: center;
     justify-content: space-evenly;
   }
+
+  .poster-container {
+    width:90vw;
+  }
 }
 
 
 @media (max-width:48em) {
-  .poster-container {
-    width:90vw;
-  }
   .register-div {
     margin-top: 20px;
     padding: 10px;

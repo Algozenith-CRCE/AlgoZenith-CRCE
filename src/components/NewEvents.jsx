@@ -21,7 +21,8 @@ export default function newEvents(props) {
             <ul>
               <li>UI/UX Webinar</li>
               <li>Speaker: Vanshita Singh<br/>(UX Designer-Cervello)</li>
-              <li>Date / Time: 30<sup>th</sup> September, 7 PM</li>
+              <li>Date: 30<sup>th</sup> September 2023</li>
+              <li>Time: 7 PM</li>
               <li>Link: <a href='https://meet.google.com/dvi-gror-jff' style={{'textDecoration': 'underline'}}>https://meet.google.com/dvi-gror-jff</a></li>
             </ul>
             <p className='event-name'>Day 2</p>
