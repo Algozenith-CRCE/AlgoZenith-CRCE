@@ -17,6 +17,7 @@ import Contact from './components/Contact';
 import  ScrollToTop  from "react-scroll-to-top";
 import Teammember from "./components/Teammembers";
 import Fade from 'react-reveal/Fade';
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   return (
@@ -47,6 +48,7 @@ function App() {
         }/>
       </Routes>
       <Footer />
+      <Analytics />
     </Router>
   );
 }
