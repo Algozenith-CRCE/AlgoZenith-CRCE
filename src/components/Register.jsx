@@ -5,6 +5,9 @@ import Zoom from 'react-reveal/Zoom';
 import { collection, addDoc } from "firebase/firestore";
 import {db} from '../firebase';
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 
 function Register() {
@@ -27,9 +30,32 @@ function Register() {
     e.preventDefault();
     // console.log(formData);
 
+    const notifySuccess = () => toast.success('Registration Successful!', {
+      position:"top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+      });;
+  
+    const notifyFailure = () => toast.error('Please fill all the fields', {
+      position: "top-center",
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+      });
+
     if(formData.name==='' || formData.email==='' || formData.phoneNumber==='' || formData.rollNumber==='' || formData.year==='' || formData.branch==='')
     {
-      alert("Some fields are incomplete");
+      // alert("Some fields are incomplete");
+      notifyFailure();
     }
     else{
       try{
@@ -45,7 +71,7 @@ function Register() {
               branch:formData.branch,
             
         });
-            alert("Registration successful")
+            notifySuccess();
             setFormData({
               name: '',
               email: '',
@@ -56,13 +82,11 @@ function Register() {
             });
         } catch(e)
         {
-          console.log("Couldnot store data")
+          console.log("Couldnt store data")
+          alert('Couldnt store data')
         }
         };
-  }
-          
-
-    
+  }  
 
   return (
       <div className="register-form-container" id='contact'>
@@ -127,6 +151,7 @@ function Register() {
             </Zoom>
           </form>
         </Zoom>
+        <ToastContainer position="top-center" autoClose={5000} hideProgressBar={false} newestOnTop={false} closeOnClick rtl={false} pauseOnFocusLoss draggable pauseOnHover theme="light" />
       </div>
   );
 }

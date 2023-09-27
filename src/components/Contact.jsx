@@ -17,12 +17,6 @@ function ContactForm() {
     setFormData({ ...formData, [name]: value });
   };
 
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   // Handle form submission here (e.g., send data to a server)
-  //   console.log(formData);
-  // };
-
   return (    
     <div className="contact-form-container" id='contact'>
     <Zoom>

@@ -1,7 +1,6 @@
 import { React, useState} from 'react'
 import blueLogo from '../assets/blueLogo.svg';
 import "./BackBtn.css";
-// import { Link as ScrollLink } from 'react-scroll';
 import  { Link }   from 'react-router-dom';
 
 export default function BackBtn() {
@@ -18,7 +17,6 @@ export default function BackBtn() {
   }
 
   window.addEventListener('scroll', changeBackground);
-
 
   return (
     <div className={top ? "top" : "top act"}>

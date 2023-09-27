@@ -34,7 +34,7 @@ function App() {
               <Events />
               <Teammember />
             </Fade>
-              <Contact />
+            <Contact />
           </>
         }/>
         <Route exact path='/register' element={
