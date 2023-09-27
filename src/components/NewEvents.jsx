@@ -10,7 +10,8 @@ import ss from '../assets/unleashed.jpeg'
 export default function newEvents(props) { 
   return (
     <>
-      <div className='wrap-register' style={{'marginTop':props.margin}}>
+      <h1 style={{'textAlign':'center','color':'#2295f4','marginTop':props.margin}}>AlgoZenith Unleashed</h1>
+      <div className='wrap-register'>
         <Fade bottom>
           <div className='poster-container'>
             <img src={ss} alt="Event-Poster" className='event-poster'/>
@@ -34,8 +35,8 @@ export default function newEvents(props) {
             <Link to='/register' className='btn-wrap'>
               <button className='register-btn' style={{'display':props.display}}  >Register</button>
             </Link>
-            <p className='events-des'>Problem Statement will be released on our website soon & submission will be accepted through attached Google Form only.</p>
           </div>
+            <p className='events-des'>Problem Statement will be released on our website soon & submission will be accepted through attached Google Form only.</p>
         </Fade>
       </div>
     </>

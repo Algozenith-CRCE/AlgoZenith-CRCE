@@ -24,11 +24,11 @@ function App() {
     <Router>  
       <ScrollToTop smooth class="scroll-to-top-button" color='navy' width='20px' height='20px' />
       <ScrollTop /> 
-      <Navbar/>
       <Routes>
         <Route exact path='/' element={
           <>
-              <Home />
+            <Navbar/>
+            <Home />
             <Fade bottom>
               <Objective />
               <Events />

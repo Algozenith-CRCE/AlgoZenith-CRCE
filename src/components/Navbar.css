@@ -5,6 +5,15 @@
   width: 100%;
   z-index: 3;
   top: 0;
+  transition: 0.3s ease;
+}
+
+.active {
+  background-color: transparent;
+  box-shadow: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: 0.2s ease;
 }
 
 .header ul {
@@ -12,7 +21,7 @@
   padding: 0;
   list-style: none;
   overflow: hidden;
-  background-color: #e7effc;
+  /* background-color: #e7effc; */
 }
 
 .header li a{

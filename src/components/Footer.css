@@ -70,11 +70,13 @@ a{
 
 .contact-container p{
   font-size: 1.2rem;
+  margin-bottom: 0px;
 }
 
 .socials-container {
   display: flex;
   font-size: 1.4rem;
+  margin: 0;
 }
 
 .social-icons {

@@ -12,20 +12,20 @@ export default function Footer() {
         <a href='/'><img src={whiteLogo} alt='logo' className='white-logo'/></a>
         </div>
         <div className='links-container'>
-          <p><strong style={{'fontSize':'18px'}}>Usefull Links</strong></p>
+          <p><strong style={{'fontSize':'23px'}}>Useful Links</strong></p>
           <p ><Link to='home' spy={true} smooth={true} offset={-100} duration={500} className='link'>Home</Link></p>
           <p ><Link to='events' spy={true} smooth={true} offset={-100} duration={500} className='link' >Events</Link></p>
           <p ><Link to='team' spy={true} smooth={true} offset={-100} duration={500} className='link'>Team Members</Link></p>
         </div>
         <div className='contact-container'>
-          <p ><strong>Contact Us</strong></p>
-          <div className='socials-container'>
+          <p ><strong style={{'fontSize':'23px'}}>Contact Us</strong></p>
+          <div className='socials-container' style={{'marginTop':'5px'}}>
               <a href='https://www.instagram.com/algozenith_crce/'><FaInstagram className='social-icons'/></a> 
               <a href='https://www.linkedin.com/in/algozenith-crce/'><FaLinkedinIn className='social-icons'/></a>
               <a href='https://github.com/Algozenith-CRCE'><FaGithub className='social-icons'/></a>
               <a href='mailto:crce.algozenith@gmail.com'><FaEnvelope className='social-icons'/></a>
           </div>
-          <p>Phone: +91 72497 35828</p>
+          <p style={{'marginTop':'10px'}}>Phone: +91 72497 35828</p>
         </div>
       </div>
       <div className='credits-part'>

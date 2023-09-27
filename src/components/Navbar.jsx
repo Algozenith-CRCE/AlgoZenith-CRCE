@@ -5,13 +5,25 @@ import { Link as ScrollLink } from 'react-scroll';
 
 function Navbar() {
   const [activeSection, setActiveSection] = useState("home");
+  const [navbar, setNavbar] = useState(false);
   const handleSetActive = (to) => {
     setActiveSection(to);
   };
 
+  const changeBackground = () => {
+    if( window.scrollY > 50) {
+      setNavbar(true);
+    }
+    else {
+      setNavbar(false);
+    }
+  }
+
+  window.addEventListener('scroll', changeBackground);
+
   return (
     <>
-      <header className="header">
+      <header className={navbar ? "header" : "header active"}>
         <ScrollLink
           to="home"
           spy={true}
@@ -44,7 +56,7 @@ function Navbar() {
               to="objectives"
               spy={true}
               smooth={true}
-              offset={-150}
+              offset={-250}
               duration={500}
               onSetActive={handleSetActive}
               style={{ color: activeSection === "objectives" ? "#0077ff" : " ", transition: "color 0.3s ease" }}
@@ -72,7 +84,7 @@ function Navbar() {
               to="team"
               spy={true}
               smooth={true}
-              offset={-200}
+              offset={-150}
               duration={500}
               onSetActive={handleSetActive}
               style={{ color: activeSection === "team" ? "#0077ff" : " ", transition: "color 0.3s ease" }}
@@ -86,7 +98,7 @@ function Navbar() {
               to="contact"
               spy={true}
               smooth={true}
-              offset={-200}
+              offset={-150}
               duration={500}
               onSetActive={handleSetActive}
               style={{ color: activeSection === "contact" ? "#0077ff" : " ", transition: "color 0.3s ease" }}
