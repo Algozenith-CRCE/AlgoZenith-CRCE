@@ -25,7 +25,7 @@ export default function BackBtn() {
       <Link to="/" ><img src={blueLogo} alt="logo" className="logo"></img></Link>
         <input className="menu-btn" type="checkbox" id="menu-btn" />
         <ul className="menu">
-            <li><Link to="/"><button className='back-btn'>Back to Home</button></Link></li>
+            <li><Link to="/"><button className={top ? "back-btn" : "back-btn white-btn"}>Back to Home</button></Link></li>
         </ul>
     </div>
   )

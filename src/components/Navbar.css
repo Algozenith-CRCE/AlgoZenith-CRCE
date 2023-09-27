@@ -13,7 +13,7 @@
   box-shadow: none;
   padding-top: 10px;
   padding-bottom: 10px;
-  transition: 0.2s ease;
+  transition: 0.3s ease;
 }
 
 .header ul {
@@ -21,7 +21,7 @@
   padding: 0;
   list-style: none;
   overflow: hidden;
-  /* background-color: #e7effc; */
+  background-color: #e7effc;
 }
 
 .header li a{
@@ -139,5 +139,9 @@
   }
   .header .menu-icon {
     display: none;
+  }
+
+  .active ul {
+    background-color: white;
   }
 }
