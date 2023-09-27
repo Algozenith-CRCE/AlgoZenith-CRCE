@@ -31,7 +31,7 @@ function Register() {
     // console.log(formData);
 
     const notifySuccess = () => toast.success('Registration Successful!', {
-      position:"top-center",
+      position:"bottom-center",
       autoClose: 5000,
       hideProgressBar: false,
       closeOnClick: true,
@@ -41,8 +41,8 @@ function Register() {
       theme: "light",
       });;
   
-    const notifyFailure = () => toast.error('Please fill all the fields', {
-      position: "top-center",
+    const notifyFailure = () => toast.error('Please Complete All The Fields', {
+      position: "bottom-center",
       autoClose: 3000,
       hideProgressBar: false,
       closeOnClick: true,
