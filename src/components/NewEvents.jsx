@@ -18,19 +18,19 @@ export default function newEvents(props) {
           </div>
           <div className='register-div'>
             {/* <Lottie animationData={Timer} className='coming-image'/> */}
-            <p className='event-name'>Day 1</p>
-            <ul>
-              <li>UI/UX Webinar</li>
-              <li>Speaker: Vanshita Singh<br/>(UX Designer-Cervello)</li>
-              <li>Date: 30<sup>th</sup> September 2023</li>
-              <li>Time: 7 PM</li>
-              <li>Link: <a href='https://meet.google.com/dvi-gror-jff' style={{'textDecoration': 'underline'}}>https://meet.google.com/dvi-gror-jff</a></li>
+            <ul style={{"listStyle":'none'}}>
+              <li className='event-name'><span>Day 1</span></li>
+              <li><strong>UI/UX Webinar</strong></li>
+              <li><strong>Speaker:</strong> Vanshita Singh (UX Designer-Cervello)</li>
+              <li><strong>Date:</strong> 30<sup>th</sup> September 2023</li>
+              <li><strong>Time:</strong> 7 PM</li>
+              <li><strong>Link:</strong> <a href='https://meet.google.com/dvi-gror-jff' style={{'textDecoration': 'underline'}}>https://meet.google.com/dvi-gror-jff</a></li>
             </ul>
-            <p className='event-name'>Day 2</p>
-            <ul>
-              <li>24 hours UI Competition</li>
-              <li>Start: 1<sup>st</sup> October, 7 AM</li>
-              <li>Deadline: 2<sup>nd</sup> October, 7 AM</li>
+            <ul style={{"listStyle":'none'}}>
+              <li className='event-name'><span>Day 2</span></li>
+              <li><strong>24 hours UI Competition</strong></li>
+              <li><strong>Start:</strong> 1<sup>st</sup> October, 7 AM</li>
+              <li><strong>Deadline:</strong> 2<sup>nd</sup> October, 7 AM</li>
             </ul>
             <Link to='/register' className='btn-wrap'>
               <button className='register-btn' style={{'display':props.display}}  >Register</button>

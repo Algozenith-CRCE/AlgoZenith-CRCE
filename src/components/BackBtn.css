@@ -189,6 +189,10 @@
     /* transition: transform 0.2s, box-shadow 0.2s; */
   }
 
+  .act {
+    padding: 0px;
+  }
+
   .top li a{
     padding: 20px 0px;
   }
