@@ -16,12 +16,16 @@
   transition: 0.3s ease;
 }
 
+.active-ul {
+  background-color: white;
+}
+
 .header ul {
   margin: 0;
   padding: 0;
   list-style: none;
   overflow: hidden;
-  background-color: #e7effc;
+  /* background-color: #e7effc; */
 }
 
 .header li a{
