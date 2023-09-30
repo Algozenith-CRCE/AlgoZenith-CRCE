@@ -30,10 +30,10 @@ export default function newEvents(props) {
               <li className='event-name'><span>24 hours UI Competition</span></li>
               {/* <li><strong></strong></li> */}
               <li><strong>Deadline:</strong> <span style={{'color':"#800000"}}><strong>2<sup>nd</sup> October, 7 AM</strong></span></li>
-              <li id='problem-statement' className='highlight' style={{"backgroundColor":"#ddf1fff7","marginTop":"20px","marginBottom":"20px","padding":"20px"}}><strong>Problem Statement:</strong><br/>Create front-end for a luxury fashion e-commerce retailer targeting high-end fashion enthusiasts. Utilize HTML, CSS, JavaScript, or your preferred framework (e.g., React, Angular, or Vue.js) to design a responsive and visually stunning landing page. Prioritize smooth navigation, engaging designer profiles, user interactions (reviews and ratings).</li>
-              <div><a href='https://forms.gle/A1DdvV9LQ2DW92357'>
-                <button className='register-btn' style={{'display':props.display}}  >Submission Link</button></a></div>
+              <li id='problem-statement' className='highlight' style={{"backgroundColor":"#ddf1fff7","marginTop":"15px","marginBottom":"20px","padding":"20px"}}><strong>Problem Statement:</strong><br/>Create front-end for a luxury fashion e-commerce retailer targeting high-end fashion enthusiasts. Utilize HTML, CSS, JavaScript, or your preferred framework (e.g., React, Angular, or Vue.js) to design a responsive and visually stunning landing page. Prioritize smooth navigation, engaging designer profiles, user interactions (reviews and ratings).</li>
             </ul>
+              <div style={{'display':'flex','alignItems':'center','justifyContent':'center'}}><a href='https://forms.gle/A1DdvV9LQ2DW92357'>
+                <button className='register-btn' style={{'display':props.display}}  >Submission Link</button></a></div>
             {/* <Link to='/register' className='btn-wrap'>
               <button className='register-btn' style={{'display':props.display}}  >Register</button>
             </Link> */}
