@@ -41,13 +41,7 @@ export default function Home() {
       <div className='wrap-container' id='home'>
         <Fade bottom>
         <span>
-        <div className='content-container'>
-            <span className='highlight'>
-            <p><span className='highlighted' style={{'color':"#800000"}}>Algozenith Unleashed</span> webinar is <strong style={{"color":"#FF0B0B"}}>Live</strong></p>
-            <a href=' https://meet.google.com/dvi-gror-jff'><button className='register' style={{'width':'230px','backgroundColor': buttonColor,'color':'darkgreen','transition':'0.3s ease','scale':scale}}>Join Now</button></a>  
-          </span>
-          </div>
-          <div className='content-container' style={{"marginTop":"15px"}}>
+          {/* <div className='content-container'>
           <span className='highlight'>
             <p><span className='highlighted'>AlgoZenith</span>,</p>
             <p>An <strong>Algorithm</strong> to become</p>
@@ -56,6 +50,16 @@ export default function Home() {
               <button className='register'>Know More</button>
             </Link>
             </span>
+          </div> */}
+          <div className='content-container' style={{"marginTop":"15px"}}>
+            <span className='highlight'>
+            <p><span className='highlighted'>Algozenith Unleashed</span> <br />24h UI Competition is <strong style={{"color":"#FF0B0B"}}>Live</strong></p>
+            <p style={{'fontSize':'1.4rem'}}><strong>Deadline:</strong> <span style={{'color':"#800000"}}><strong>2<sup>nd</sup> October, 7 AM</strong></span></p>
+            <Link to='problem-statement' spy={true} smooth={true} offset={-200} duration={500}><button className='register' style={{'width':'230px','backgroundColor': buttonColor,'color':'darkgreen','transition':'0.3s ease','scale':scale}}>Problem Statement</button></Link>
+            <a href='https://forms.gle/A1DdvV9LQ2DW92357'>
+              <button className='register'>Submission Link</button>
+            </a>  
+          </span>
           </div>
         </span>
         <div className='image-container'>

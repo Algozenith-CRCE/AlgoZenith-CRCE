@@ -19,24 +19,26 @@ export default function newEvents(props) {
           <div className='register-div'>
             {/* <Lottie animationData={Timer} className='coming-image'/> */}
             <ul style={{"listStyle":'none'}}>
-              <li className='event-name'><span>Day 1</span></li>
-              <li><strong>UI/UX Webinar</strong></li>
+              <li className='event-name'><span>UI/UX Webinar</span></li>
+              {/* <li><strong></strong></li> */}
               <li><strong>Speaker:</strong> Vanshita Singh (UX Designer-Cervello)</li>
               <li><strong>Date:</strong> 30<sup>th</sup> September 2023</li>
-              <li><strong>Time:</strong> 7 PM</li>
-              <li><strong>Link:</strong> <a href='https://meet.google.com/dvi-gror-jff' style={{'textDecoration': 'underline'}}>https://meet.google.com/dvi-gror-jff</a></li>
+              {/* <li><strong>Time:</strong> 7 PM</li> */}
+              {/* <li><strong>Link:</strong> <a href='https://meet.google.com/dvi-gror-jff' style={{'textDecoration': 'underline'}}>https://meet.google.com/dvi-gror-jff</a></li> */}
             </ul>
             <ul style={{"listStyle":'none'}}>
-              <li className='event-name'><span>Day 2</span></li>
-              <li><strong>24 hours UI Competition</strong></li>
-              <li><strong>Start:</strong> 1<sup>st</sup> October, 7 AM</li>
-              <li><strong>Deadline:</strong> 2<sup>nd</sup> October, 7 AM</li>
+              <li className='event-name'><span>24 hours UI Competition</span></li>
+              {/* <li><strong></strong></li> */}
+              <li><strong>Deadline:</strong> <span style={{'color':"#800000"}}><strong>2<sup>nd</sup> October, 7 AM</strong></span></li>
+              <li id='problem-statement' className='highlight' style={{"backgroundColor":"#ddf1fff7","marginTop":"20px","marginBottom":"20px","padding":"20px"}}><strong>Problem Statement:</strong><br/>Create front-end for a luxury fashion e-commerce retailer targeting high-end fashion enthusiasts. Utilize HTML, CSS, JavaScript, or your preferred framework (e.g., React, Angular, or Vue.js) to design a responsive and visually stunning landing page. Prioritize smooth navigation, engaging designer profiles, user interactions (reviews and ratings).</li>
+              <div><a href='https://forms.gle/A1DdvV9LQ2DW92357'>
+                <button className='register-btn' style={{'display':props.display}}  >Submission Link</button></a></div>
             </ul>
-            <Link to='/register' className='btn-wrap'>
+            {/* <Link to='/register' className='btn-wrap'>
               <button className='register-btn' style={{'display':props.display}}  >Register</button>
-            </Link>
+            </Link> */}
           </div>
-            <p className='events-des'>Problem Statement will be released on our website soon & submission will be accepted through attached Google Form only.</p>
+            {/* <p className='events-des'>Problem Statement will be released on our website soon & submission will be accepted through attached Google Form only.</p> */}
         </Fade>
       </div>
     </>
