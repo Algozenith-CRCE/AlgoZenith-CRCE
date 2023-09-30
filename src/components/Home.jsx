@@ -43,7 +43,7 @@ export default function Home() {
         <span>
         <div className='content-container'>
             <span className='highlight'>
-            <p><span className='highlighted' >Algozenith Unleashed</span> webinar is <strong>Live</strong></p>
+            <p><span className='highlighted' style={{'color':"#800000"}}>Algozenith Unleashed</span> webinar is <strong style={{"color":"#FF0B0B"}}>Live</strong></p>
             <a href=' https://meet.google.com/dvi-gror-jff'><button className='register' style={{'width':'230px','backgroundColor': buttonColor,'color':'darkgreen','transition':'0.3s ease','scale':scale}}>Join Now</button></a>  
           </span>
           </div>
