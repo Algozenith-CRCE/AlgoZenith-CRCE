@@ -2,6 +2,7 @@ import { React, useState} from 'react'
 import blueLogo from '../assets/blueLogo.svg';
 import "./BackBtn.css";
 import  { Link }   from 'react-router-dom';
+import { Fade } from 'react-reveal';
 
 export default function BackBtn() {
 
@@ -19,12 +20,14 @@ export default function BackBtn() {
   window.addEventListener('scroll', changeBackground);
 
   return (
-    <div className={top ? "top" : "top act"}>
-      <Link to="/" ><img src={blueLogo} alt="logo" className="logo"></img></Link>
-        <input className="menu-btn" type="checkbox" id="menu-btn" />
-        <ul className="menu">
-            <li><Link to="/"><button className={top ? "back-btn" : "back-btn white-btn"}>Back to Home</button></Link></li>
-        </ul>
-    </div>
+    <Fade top>
+      <div className={top ? "top" : "top act"}>
+        <Link to="/" ><img src={blueLogo} alt="logo" className="logo"></img></Link>
+          <input className="menu-btn" type="checkbox" id="menu-btn" />
+          <ul className="menu">
+              <li><Link to="/"><button className={top ? "back-btn" : "back-btn white-btn"}>Back to Home</button></Link></li>
+          </ul>
+      </div>
+    </Fade>
   )
 }
