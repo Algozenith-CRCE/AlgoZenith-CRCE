@@ -7,7 +7,8 @@ import Footer from './components/Footer';
 import {
   BrowserRouter as Router,
   Routes,
-  Route
+  Route, 
+  Navigate
 } from 'react-router-dom'
 import Register from './components/Register';
 import NewEvents from './components/NewEvents';
@@ -15,6 +16,7 @@ import BackBtn from './components/BackBtn';
 import ScrollTop from './components/ScrollTop';
 import Contact from './components/Contact';
 import  ScrollToTop  from "react-scroll-to-top";
+import NotFound from './components/NotFound'
 import Teammember from "./components/Teammembers";
 import Fade from 'react-reveal/Fade';
 import { Analytics } from '@vercel/analytics/react';
@@ -37,6 +39,12 @@ function App() {
             <Contact />
           </>
         }/>
+        <Route exact path='/register' element={
+          <>
+            <NotFound />
+            <Navigate to="/"/>
+          </>
+        }/>
         {/* <Route exact path='/register' element={
           <>
             <BackBtn />
@@ -46,6 +54,11 @@ function App() {
             </Fade>
           </>
         }/> */}
+        <Route path="*" element={
+          <>
+            <NotFound />
+          </>
+        } />
       </Routes>
       <Footer />
       <Analytics />
