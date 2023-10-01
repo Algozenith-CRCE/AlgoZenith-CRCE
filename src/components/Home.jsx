@@ -41,7 +41,7 @@ export default function Home() {
       <div className='wrap-container' id='home'>
         <Fade bottom>
         <span>
-          {/* <div className='content-container'>
+          <div className='content-container'>
           <span className='highlight'>
             <p><span className='highlighted'>AlgoZenith</span>,</p>
             <p>An <strong>Algorithm</strong> to become</p>
@@ -49,9 +49,12 @@ export default function Home() {
             <Link to="objectives" spy={true} smooth={true} offset={-100} duration={500}>
               <button className='register'>Know More</button>
             </Link>
+            <Link to="events" spy={true} smooth={true} offset={-100} duration={500}>
+              <button className='register'>Events</button>
+            </Link>
             </span>
-          </div> */}
-          <div className='content-container' style={{"marginTop":"15px"}}>
+          </div>
+          {/* <div className='content-container' style={{"marginTop":"15px"}}>
             <span className='highlight'>
             <p><span className='highlighted'>Algozenith Unleashed</span> </p>
             <p style={{'fontSize':'1.7rem'}}>24h UI Competition is <strong style={{"color":"#FF0B0B"}}>Live</strong></p>
@@ -61,7 +64,7 @@ export default function Home() {
               <button className='register'>Submission Link</button>
             </a>  
           </span>
-          </div>
+          </div> */}
         </span>
         <div className='image-container'>
           <Lottie animationData={animation} className='coding-image'/>
