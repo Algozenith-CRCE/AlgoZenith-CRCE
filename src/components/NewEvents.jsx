@@ -5,6 +5,7 @@ import Fade from 'react-reveal/Fade';
 import ss from '../assets/unleashed.jpeg'
 import Lottie from 'lottie-react';
 import Timer from '../assets/comingAnime.json'
+import Confetti from 'react-confetti';
 
 export default function newEvents(props) { 
   return (
@@ -12,15 +13,15 @@ export default function newEvents(props) {
       <Fade bottom>
         <div className='wrap-register' style={{"flexDirection":"column"}}>
           <Fade bottom>
-            <span className='highlight' style={{"textAlign":"center"}}>
-              <p><span className='highlighted' style={{"fontSize":"25px"}}>Congratulations to all the Winners of Algozenith Unleashed🎉✨</span> </p>
-              <p className='names' style={{"fontSize":"20px","lineBreak":"auto"}}>1<sup>st</sup> Prize🥇</p>
-            <p className='names' style={{"fontSize":"20px","lineBreak":"auto"}}> <strong>Mr. Vivian Ludrik</strong></p>
-            <p className='names' style={{"fontSize":"20px"}}>2<sup>nd</sup> Prize🥈</p>
-            <p className='names' style={{"fontSize":"20px"}}><strong>Mr. Rishabh Pathak</strong></p>
-            </span>
-          <div className='content-container' style={{"marginTop":"15px"}}>
-          </div>
+              
+                <span className='highlight' style={{"textAlign":"center"}}>
+                <Confetti  className='confetti'/>
+                  <p><span className='highlighted' style={{"fontSize":"25px"}}>Congratulations to all the Winners of Algozenith Unleashed🎉✨</span> </p>
+                  <p className='names' style={{"fontSize":"20px","lineBreak":"auto"}}>1<sup>st</sup> Prize🥇</p>
+                <p className='names' style={{"fontSize":"20px","lineBreak":"auto"}}> <strong>Mr. Vivian Ludrik</strong></p>
+                <p className='names' style={{"fontSize":"20px"}}>2<sup>nd</sup> Prize🥈</p>
+                <p className='names' style={{"fontSize":"20px"}}><strong>Mr. Rishabh Pathak</strong></p>
+                </span>
           {/* <Lottie animationData={Timer} className='coming-image'/> */}
             {/* <div className='poster-container'>
               <img src={ss} alt="Event-Poster" className='event-poster'/>

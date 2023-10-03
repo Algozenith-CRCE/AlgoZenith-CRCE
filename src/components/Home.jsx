@@ -7,6 +7,7 @@ import { Link } from 'react-scroll';
 import Fade from 'react-reveal/Fade';
 import Lottie from 'lottie-react';
 import  { useState, useEffect } from 'react';
+import Confetti from 'react-confetti';
 
 export default function Home() {
   
@@ -41,20 +42,8 @@ export default function Home() {
       <div className='wrap-container' id='home'>
         <Fade bottom>
         <span>
-          <div className='content-container'>
-          <span className='highlight'>
-            <p><span className='highlighted'>AlgoZenith</span>,</p>
-            <p>An <strong>Algorithm</strong> to become</p>
-            <p><span className='highlighted'>Awesome</span> at <span className='highlighted'>DSA</span> and <span className='highlighted'>CP</span></p>
-            <Link to="objectives" spy={true} smooth={true} offset={-100} duration={500}>
-              <button className='register'>Know More</button>
-            </Link>
-            <Link to="events" spy={true} smooth={true} offset={-100} duration={500}>
-              <button className='register'>Events</button>
-            </Link>
-            </span>
-          </div>
-          <div className='content-container' style={{"marginTop":"15px"}}>
+        <div className='content-container'>
+            <Confetti  className='confetti' />
             <span className='highlight' style={{"textAlign":"center"}}>
             <p><span className='highlighted' style={{"fontSize":"25px"}}>Congratulations to all the Winners of Algozenith Unleashed🎉✨</span> </p>
             <p className='names' style={{"fontSize":"20px","lineBreak":"auto"}}>1<sup>st</sup> Prize🥇</p>
@@ -68,6 +57,19 @@ export default function Home() {
               <button className='register'>Submission Link</button>
             </a>   */}
           </span>
+          </div>
+          <div className='content-container' style={{"marginTop":"15px"}}> 
+          <span className='highlight'>
+            <p><span className='highlighted'>AlgoZenith</span>,</p>
+            <p>An <strong>Algorithm</strong> to become</p>
+            <p><span className='highlighted'>Awesome</span> at <span className='highlighted'>DSA</span> and <span className='highlighted'>CP</span></p>
+            <Link to="objectives" spy={true} smooth={true} offset={-100} duration={500}>
+              <button className='register'>Know More</button>
+            </Link>
+            <Link to="events" spy={true} smooth={true} offset={-100} duration={500}>
+              <button className='register'>Events</button>
+            </Link>
+            </span>
           </div>
         </span>
         <div className='image-container'>

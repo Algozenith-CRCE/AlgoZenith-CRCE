@@ -58,7 +58,10 @@
   border-radius: 10px;
   padding: 15px;
 }
-
+.confetti {
+  width: 32vw;
+  height: 40vh;
+}
 .coding-image {
   height: 450px;
 } 
@@ -75,6 +78,11 @@
 
   .highlight {
     width: 78vw;
+  }
+
+  .confetti {
+    width: 78vw;
+    height: 40vh;
   }
 
   .coding-image {
