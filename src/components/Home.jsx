@@ -57,8 +57,10 @@ export default function Home() {
           <div className='content-container' style={{"marginTop":"15px"}}>
             <span className='highlight' style={{"textAlign":"center"}}>
             <p><span className='highlighted' style={{"fontSize":"25px"}}>Congratulations to all the Winners of Algozenith Unleashed🎉✨</span> </p>
-            <p className='names' style={{"fontSize":"20px"}}>1<sup>st</sup> Prize🥇: <strong>Mr. Vivian Ludrik</strong></p>
-            <p className='names' style={{"fontSize":"20px"}}>2<sup>nd</sup> Prize🥈: <strong>Mr. Rishabh Pathak</strong></p>
+            <p className='names' style={{"fontSize":"20px","lineBreak":"auto"}}>1<sup>st</sup> Prize🥇</p>
+            <p className='names' style={{"fontSize":"20px","lineBreak":"auto"}}> <strong>Mr. Vivian Ludrik</strong></p>
+            <p className='names' style={{"fontSize":"20px"}}>2<sup>nd</sup> Prize🥈</p>
+            <p className='names' style={{"fontSize":"20px"}}><strong>Mr. Rishabh Pathak</strong></p>
             {/* <p style={{'fontSize':'1.7rem'}}>24h UI Competition is <strong style={{"color":"#FF0B0B"}}>Live</strong></p>
             <p style={{'fontSize':'1.4rem'}}><strong>Deadline:</strong> <span style={{'color':"#800000"}}><strong>2<sup>nd</sup> October, 7 AM</strong></span></p>
             <Link to='problem-statement' spy={true} smooth={true} offset={-200} duration={500}><button className='register' style={{'width':'230px','backgroundColor': buttonColor,'color':'darkgreen','transition':'0.3s ease','scale':scale}}>Problem Statement</button></Link>

@@ -14,8 +14,10 @@ export default function newEvents(props) {
           <Fade bottom>
             <span className='highlight' style={{"textAlign":"center"}}>
               <p><span className='highlighted' style={{"fontSize":"25px"}}>Congratulations to all the Winners of Algozenith Unleashed🎉✨</span> </p>
-              <p className='names' style={{"fontSize":"20px"}}>1<sup>st</sup> Prize🥇: <strong>Mr. Vivian Ludrik</strong></p>
-              <p className='names' style={{"fontSize":"20px"}}>2<sup>nd</sup> Prize🥈: <strong>Mr. Rishabh Pathak</strong></p>
+              <p className='names' style={{"fontSize":"20px","lineBreak":"auto"}}>1<sup>st</sup> Prize🥇</p>
+            <p className='names' style={{"fontSize":"20px","lineBreak":"auto"}}> <strong>Mr. Vivian Ludrik</strong></p>
+            <p className='names' style={{"fontSize":"20px"}}>2<sup>nd</sup> Prize🥈</p>
+            <p className='names' style={{"fontSize":"20px"}}><strong>Mr. Rishabh Pathak</strong></p>
             </span>
           <div className='content-container' style={{"marginTop":"15px"}}>
           </div>
