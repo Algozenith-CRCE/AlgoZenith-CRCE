@@ -54,17 +54,19 @@ export default function Home() {
             </Link>
             </span>
           </div>
-          {/* <div className='content-container' style={{"marginTop":"15px"}}>
+          <div className='content-container' style={{"marginTop":"15px"}}>
             <span className='highlight'>
-            <p><span className='highlighted'>Algozenith Unleashed</span> </p>
-            <p style={{'fontSize':'1.7rem'}}>24h UI Competition is <strong style={{"color":"#FF0B0B"}}>Live</strong></p>
+            <p><span className='highlighted' style={{"fontSize":"25px"}}>Congratulations to all the Winners of Algozenith Unleashed🎉✨</span> </p>
+            <p className='names' style={{"fontSize":"20px"}}>1<sup>st</sup> Prize🥇: <strong>Mr. Vivian Ludrik</strong></p>
+            <p className='names' style={{"fontSize":"20px"}}>2<sup>nd</sup> Prize🥈: <strong>Mr. Rishabh Pathak</strong></p>
+            {/* <p style={{'fontSize':'1.7rem'}}>24h UI Competition is <strong style={{"color":"#FF0B0B"}}>Live</strong></p>
             <p style={{'fontSize':'1.4rem'}}><strong>Deadline:</strong> <span style={{'color':"#800000"}}><strong>2<sup>nd</sup> October, 7 AM</strong></span></p>
             <Link to='problem-statement' spy={true} smooth={true} offset={-200} duration={500}><button className='register' style={{'width':'230px','backgroundColor': buttonColor,'color':'darkgreen','transition':'0.3s ease','scale':scale}}>Problem Statement</button></Link>
             <a href='https://forms.gle/A1DdvV9LQ2DW92357'>
               <button className='register'>Submission Link</button>
-            </a>  
+            </a>   */}
           </span>
-          </div> */}
+          </div>
         </span>
         <div className='image-container'>
           <Lottie animationData={animation} className='coding-image'/>

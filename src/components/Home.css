@@ -80,4 +80,9 @@
   .coding-image {
     height: 300px;
   }
+
+  .names {
+    text-align: center;
+    font-size: 15px;
+  }
 }

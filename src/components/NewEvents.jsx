@@ -9,10 +9,16 @@ import Timer from '../assets/comingAnime.json'
 export default function newEvents(props) { 
   return (
     <>
-      <h1 style={{'textAlign':'center','color':'#2295f4','marginTop':props.margin}}>Thank You for Participating in AlgoZenith Unleashed!</h1>
       <div className='wrap-register' style={{"flexDirection":"column"}}>
         <Fade bottom>
-        <Lottie animationData={Timer} className='coming-image'/>
+          <span className='highlight'>
+            <p><span className='highlighted' style={{"fontSize":"25px","textAlign":"center"}}>Congratulations to all the Winners of Algozenith Unleashed🎉✨</span> </p>
+            <p className='names' style={{"fontSize":"20px"}}>1<sup>st</sup> Prize🥇: <strong>Mr. Vivian Ludrik</strong></p>
+            <p className='names' style={{"fontSize":"20px"}}>2<sup>nd</sup> Prize🥈: <strong>Mr. Rishabh Pathak</strong></p>
+          </span>
+        <div className='content-container' style={{"marginTop":"15px"}}>
+        </div>
+        {/* <Lottie animationData={Timer} className='coming-image'/> */}
           {/* <div className='poster-container'>
             <img src={ss} alt="Event-Poster" className='event-poster'/>
           </div> */}
@@ -40,6 +46,7 @@ export default function newEvents(props) {
           <p className='events-des'>We shall return back with new amazing events</p>
         </Fade>
       </div>
+      <h1 style={{'textAlign':'center','color':'#2295f4','marginTop':props.margin}}>Thank You for Participating in AlgoZenith Unleashed!</h1>
     </>
   )
 }
