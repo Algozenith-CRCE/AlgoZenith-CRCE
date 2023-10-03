@@ -55,7 +55,7 @@ export default function Home() {
             </span>
           </div>
           <div className='content-container' style={{"marginTop":"15px"}}>
-            <span className='highlight'>
+            <span className='highlight' style={{"textAlign":"center"}}>
             <p><span className='highlighted' style={{"fontSize":"25px"}}>Congratulations to all the Winners of Algozenith Unleashed🎉✨</span> </p>
             <p className='names' style={{"fontSize":"20px"}}>1<sup>st</sup> Prize🥇: <strong>Mr. Vivian Ludrik</strong></p>
             <p className='names' style={{"fontSize":"20px"}}>2<sup>nd</sup> Prize🥈: <strong>Mr. Rishabh Pathak</strong></p>
