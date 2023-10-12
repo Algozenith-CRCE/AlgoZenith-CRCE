@@ -25,7 +25,8 @@ function Navbar() {
   return (
     <>
       <Fade top>
-        <header className={navbar ? "header" : "header active"}>
+        <header className={navbar ? "header" : "header active"}
+        style={{"paddingTop":navbar ? "0px" : "10px","paddingBottom":navbar ? "0px" : "10px"}}>
           <ScrollLink
             to="home"
             spy={true}

@@ -11,13 +11,13 @@
 .active {
   background-color: transparent;
   box-shadow: none;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  /* padding-top: 10px;
+  padding-bottom: 10px; */
   transition: 0.3s ease;
 }
 
 .active-ul {
-  background-color: white;
+  background-color: transparent;
 }
 
 .header ul {
@@ -130,6 +130,12 @@
 
 
 @media (min-width: 890px) {
+  .header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
   .header li {
     float: left;
   }
@@ -147,5 +153,17 @@
 
   .active ul {
     background-color: white;
+  }
+}
+
+@media (min-width: 920px) {
+  .header {
+    gap: 70px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .header {
+    gap: 300px;
   }
 }
