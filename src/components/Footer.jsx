@@ -1,15 +1,21 @@
 import React from 'react'
-import './Footer.css'
-import whiteLogo from '../assets/whiteLogo.svg'
 import { FaInstagram,FaLinkedinIn,FaGithub,FaEnvelope } from "react-icons/fa6";
 import { Link } from 'react-scroll'
+
+import './Footer.css'
+import whiteLogo from '../assets/whiteLogo.svg'
+
 
 export default function Footer() {
   return (
     <footer>
       <div className='main-content'>
         <div className='identity-container'>
-        <a href='/'><img src={whiteLogo} alt='logo' className='white-logo'/></a>
+            <img src={whiteLogo} alt='logo' className='white-logo'/>
+        </div>
+        <div className='community-container'>
+          <p><strong style={{'fontSize':'23px'}}>AlgoZenith Community</strong></p>
+          <p style={{'margin':'0px'}}>AlgoZenith is a community-driven educational initiative designed to empower students in acquiring proficiency in DSA as well as enhancing their skills in CP.</p>
         </div>
         <div className='links-container'>
           <p><strong style={{'fontSize':'23px'}}>Useful Links</strong></p>

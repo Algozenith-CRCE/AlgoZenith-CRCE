@@ -1,8 +1,10 @@
 import { React, useState} from 'react'
-import blueLogo from '../assets/blueLogo.svg';
-import "./BackBtn.css";
 import  { Link }   from 'react-router-dom';
 import { Fade } from 'react-reveal';
+
+import "./BackBtn.css";
+import blueLogo from '../assets/blueLogo.svg';
+
 
 export default function BackBtn() {
 

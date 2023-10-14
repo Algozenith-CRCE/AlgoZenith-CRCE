@@ -1,4 +1,8 @@
 import React from 'react';
+import { FaInstagram, FaLinkedin } from 'react-icons/fa';
+// import Fade from 'react-reveal/Fade';
+import Zoom from 'react-reveal/Zoom';
+
 import './Teammembers.css';
 import aaron from '../assets/aaron.png';
 import alroy from '../assets/alroy.jpg';
@@ -6,9 +10,7 @@ import shruti from '../assets/shruti.png';
 import rudalph from '../assets/rudalph.png';
 import nathan from '../assets/nathan.png';
 import punit from '../assets/punit.png';
-import { FaInstagram, FaLinkedin } from 'react-icons/fa';
-// import Fade from 'react-reveal/Fade';
-import Zoom from 'react-reveal/Zoom';
+
 
 const TeamMembersComponent = () => {
   const teamMembers = [

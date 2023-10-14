@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
-import './Contact.css'; 
 import { FaPhone,FaEnvelope } from "react-icons/fa6";
 import Zoom from 'react-reveal/Zoom';
+
+import './Contact.css'; 
+
 
 function ContactForm() {
   const [formData, setFormData] = useState({

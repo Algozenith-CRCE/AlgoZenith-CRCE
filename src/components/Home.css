@@ -1,7 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=REM&display=swap');
+
+@font-face {
+  font-family: product-sans;
+  src: url(../assets/product-sans/ProductSansRegular.ttf);
+}
 
 *{
-  font-family: 'REM',sans-serif;
+  font-family: product-sans;
+  letter-spacing: 0.7px;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 .wrap-container {

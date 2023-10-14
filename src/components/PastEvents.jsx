@@ -1,7 +1,8 @@
 import React from 'react'
+import Fade from 'react-reveal/Fade';
+
 import './PastEvents.css'
 import EventCard from './EventCard'
-import Fade from 'react-reveal/Fade';
 import Unleashed from '../assets/unleashed.jpeg'
 import poster from '../assets/mememania.png'
 

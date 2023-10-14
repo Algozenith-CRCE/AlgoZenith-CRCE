@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
-import './Register.css'; 
 import Zoom from 'react-reveal/Zoom';
 // import {app} from '../firebase';
 import { collection, addDoc } from "firebase/firestore";
 import {db} from '../firebase';
-
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+import './Register.css'; 
 
 
 function Register() {

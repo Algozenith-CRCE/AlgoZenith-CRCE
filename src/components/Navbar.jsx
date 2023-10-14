@@ -1,8 +1,10 @@
 import React, { useState } from "react";
-import blueLogo from '../assets/blueLogo.svg';
-import "./Navbar.css";
 import { Link as ScrollLink } from 'react-scroll';
 import { Fade } from 'react-reveal';
+
+import blueLogo from '../assets/blueLogo.svg';
+import "./Navbar.css";
+
 
 function Navbar() {
   const [activeSection, setActiveSection] = useState("home");
@@ -59,7 +61,7 @@ function Navbar() {
                 to="objectives"
                 spy={true}
                 smooth={true}
-                offset={-250}
+                offset={-150}
                 duration={500}
                 onSetActive={handleSetActive}
                 style={{ color: activeSection === "objectives" ? "#0077ff" : " ", transition: "color 0.3s ease" }}
@@ -73,7 +75,7 @@ function Navbar() {
                 to="events"
                 spy={true}
                 smooth={true}
-                offset={-180}
+                offset={-150}
                 duration={500}
                 onSetActive={handleSetActive}
                 style={{ color: activeSection === "events" ? "#0077ff" : " ", transition: "color 0.3s ease" }}

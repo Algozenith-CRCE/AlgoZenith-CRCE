@@ -1,7 +1,9 @@
 import React from 'react';
+import Fade from 'react-reveal/Fade';
+
 import './Objective.css';
 import Target from '../assets/target.png'
-import Fade from 'react-reveal/Fade';
+
 
 const ObjectiveComponent = () => {
   const objectives = [

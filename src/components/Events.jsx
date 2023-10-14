@@ -1,8 +1,10 @@
 import React from 'react'
+import Fade from 'react-reveal/Fade';
+
 import './Events.css'
 import NewEvents from './NewEvents'
 import PastEvents from './PastEvents'
-import Fade from 'react-reveal/Fade';
+
 
 export default function Events() {
   return (
