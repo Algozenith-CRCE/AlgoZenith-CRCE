@@ -135,6 +135,7 @@ a{
     width: 40vw;
     align-items: start;
     justify-content: start;
+    text-align: start;
   }
 
   .main-content {

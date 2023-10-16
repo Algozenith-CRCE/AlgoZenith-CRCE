@@ -1,9 +1,10 @@
 import { React } from 'react'
 // import { Link } from 'react-router-dom';
-// import Lottie from 'lottie-react';
+import Lottie from 'lottie-react';
 import Fade from 'react-reveal/Fade';
 
 import './NewEvents.css';
+import Timer from '../assets/comingAnime.json'
 
 
 export default function newEvents(props) { 
@@ -20,7 +21,7 @@ export default function newEvents(props) {
                 <p className='names' style={{"fontSize":"20px"}}>2<sup>nd</sup> Prize🥈</p>
                 <p className='names' style={{"fontSize":"20px"}}><strong>Mr. Rishabh Pathak</strong></p>
                 </span> */}
-          {/* <Lottie animationData={Timer} className='coming-image'/> */}
+          <Lottie animationData={Timer} className='coming-image'/>
             {/* <div className='poster-container'>
               <img src={ss} alt="Event-Poster" className='event-poster'/>
             </div> */}
@@ -47,7 +48,6 @@ export default function newEvents(props) {
             </div> */}
           </Fade>
         </div>
-        <h1 style={{'textAlign':'center','color':'#2295f4','marginTop':props.margin}}>Thank You for Participating in AlgoZenith Unleashed!</h1>
       </Fade>
     </>
   )

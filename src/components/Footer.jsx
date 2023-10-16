@@ -37,7 +37,7 @@ export default function Footer() {
       <div className='credits-part'>
         <p>&#169; Copyright <strong>Algozenith CRCE.</strong> All Rights Reserved</p>
         <p>Designed and Developed by</p>
-        <p className='dev-names'><a href='https://www.linkedin.com/in/alroy-pereira-2b3631248' className='link' style={{'fontSize':'1.15em'}}>Alroy Pereira</a>,<br/><a href='https://www.linkedin.com/in/aaron-pereira-878608246/' className='link'> Aaron Pereira</a>,<a href='https://www.linkedin.com/in/rudalph-gonsalves-219463257/' className='link'>Rudalph Gonsalves</a></p>
+        <p className='dev-names'><a href='https://www.linkedin.com/in/alroy-pereira-2b3631248' className='link'>Alroy Pereira</a>,<a href='https://www.linkedin.com/in/aaron-pereira-878608246/' className='link'> Aaron Pereira</a>,<a href='https://www.linkedin.com/in/rudalph-gonsalves-219463257/' className='link'>Rudalph Gonsalves</a></p>
       </div>
     </footer>
   )

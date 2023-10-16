@@ -45,7 +45,7 @@
 
 .obj-card p {
   font-size: 25px;
-  text-align: justify;
+  text-align: start;
   /* padding: 0px 10px; */
 }
 
