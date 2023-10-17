@@ -102,4 +102,12 @@
     text-align: center;
     font-size: 15px;
   }
+
+  .sub-head {
+    font-size: 1.4rem;
+  }
+
+  .register {
+    width: 7rem;
+  }
 }

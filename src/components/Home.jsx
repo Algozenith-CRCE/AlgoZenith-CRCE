@@ -48,8 +48,8 @@ export default function Home() {
           <div className='content-container' style={{"marginTop":"15px"}}> 
           <span className='highlight'>
             <p><span className='highlighted'>AlgoZenith</span>,</p>
-            <p>An <strong>Algorithm</strong> to become</p>
-            <p><span className='highlighted'>Awesome</span> at <span className='highlighted'>DSA</span> and <span className='highlighted'>CP</span></p>
+            <p className='sub-head'>An <strong>Algorithm</strong> to become</p>
+            <p className='sub-head'><span className='highlighted'>Awesome</span> at <span className='highlighted'>DSA</span> and <span className='highlighted'>CP</span></p>
             <Link to="objectives" spy={true} smooth={true} offset={-100} duration={500}>
               <button className='register'>Know More</button>
             </Link>

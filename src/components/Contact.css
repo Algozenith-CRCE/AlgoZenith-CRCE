@@ -10,13 +10,19 @@
 }
 
 .contact-detail {
-  width: 100%;
+  width: 60vw;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.contact-detail input{
-  width: fit-content;
+.left{
+  display: flex;
+  width:300px;
+}
+
+.right{
+  display: flex;
+  width:300px;
 }
 .form {
   display: flex;
@@ -44,7 +50,8 @@
 }
 
 .form-container {
-  width: 50vw;
+  /* width: 50vw; */
+  width: fit-content;
   flex-direction: column;
   display: flex;
   align-items: center;
