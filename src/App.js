@@ -48,7 +48,7 @@ function App() {
             <Navigate to="/"/>
           </>
         }/>*/}
-        <Route exact path='/alroy' element={
+        <Route exact path='/register' element={
           <>
             <BackBtn />
             <Fade bottom>
