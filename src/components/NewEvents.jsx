@@ -16,12 +16,12 @@ export default function newEvents(props) {
             <div className='poster-container'>
               <img src={techVista} alt="Event-Poster" className='event-poster'/>
             </div>
-            <div className='register-div'>
+            <div className='register-div' style={{'backgroundColor':"#ddf1fff7",'paddingBottom':'10px','borderRadius':'10px'}}>
               <ul className='event-details' style={{"listStyle":'none'}}>
-                <li className='event-name' style={{'fontSize':'2rem'}}><span>Tech Vista</span></li>
+                <li className='event-name' style={{'fontSize':'2rem','textAlign':'center'}}><span>Tech Vista</span></li>
                 <p className='event-name'>Day 1</p>
                 <li><strong></strong></li>
-                <li><strong>Speaker:</strong> Vivek Gupta (Ex-Google SDE)</li>
+                <li><strong>Speaker:</strong> Vivek Gupta (Ex-Google)</li>
                 <li><strong>Date:</strong> 14<sup>th</sup> February 2024</li>
                 <li><strong>Time:</strong> 1.30 PM</li>
                 <li><strong>Venue:</strong> Seminar Hall 108</li>
