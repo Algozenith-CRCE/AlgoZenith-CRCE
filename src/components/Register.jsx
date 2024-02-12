@@ -59,7 +59,7 @@ function Register() {
     else{
       try{
         /*eslint-disable*/ 
-        const docRef = addDoc(collection(db,"collections"), 
+        const docRef = addDoc(collection(db,"techVista"), 
         /*eslint-enable*/ 
         {
               name:formData.name,
