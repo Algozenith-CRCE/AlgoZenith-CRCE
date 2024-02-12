@@ -26,7 +26,7 @@ function ContactForm() {
     <Zoom>
       <h2 className="center events-title" style={{'fontWeight':'300'}}><strong>CONTACT US</strong></h2>
       <div className='form-anime-container'>
-        <Lottie animationData={envelope} className='envelope-anime' />
+        {/* <Lottie animationData={envelope} className='envelope-anime' /> */}
         <div className='form-container'>
           <div className="contact-details">
             <div className="contact-detail left">
