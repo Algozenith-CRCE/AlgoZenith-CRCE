@@ -92,6 +92,14 @@
   .event-poster {
     height: 300px;
   }
+
+  .register-div {
+    text-align: center;
+  }
+  
+  .event-details {
+    text-align: center;
+  }
 }
 
 /* @media (max-width:760px) {

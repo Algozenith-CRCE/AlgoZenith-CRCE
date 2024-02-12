@@ -15,9 +15,9 @@ import Home from './components/Home'
 import Objective from './components/Objective';
 import Events from './components/Events';
 import Footer from './components/Footer';
-// import Register from './components/Register';
-// import NewEvents from './components/NewEvents';
-// import BackBtn from './components/BackBtn';
+import Register from './components/Register';
+import NewEvents from './components/NewEvents';
+import BackBtn from './components/BackBtn';
 import ScrollTop from './components/ScrollTop';
 import Contact from './components/Contact';
 import NotFound from './components/NotFound'
@@ -42,21 +42,21 @@ function App() {
               <Footer />
           </>
         }/>
-        <Route exact path='/register' element={
+        {/* <Route exact path='/register' element={
           <>
             <NotFound />
             <Navigate to="/"/>
           </>
-        }/>
-        {/* <Route exact path='/register' element={
+        }/>*/}
+        <Route exact path='/alroy' element={
           <>
             <BackBtn />
             <Fade bottom>
-              <NewEvents display='none' margin='100px'/>
+              <NewEvents display='none' margin='80px'/>
               <Register />
             </Fade>
           </>
-        }/> */}
+        }/> 
         <Route path="*" element={
           <>
             <NotFound />
