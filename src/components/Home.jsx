@@ -6,45 +6,44 @@ import Lottie from 'lottie-react';
 import './Home.css'
 import animation from '../assets/codingAnime.json'
 
-// import graphic from '../assets/code.png'
-// import { Link as RouteLink } from 'react-router-dom';
-// import  { useState, useEffect } from 'react';
+import { Link as RouteLink } from 'react-router-dom';
+import  { useEffect } from 'react';
+import { useState } from 'react';
 
 
 export default function Home() {
   
-  // const colors = ["#FFFEC4","#CBFFA9"];
-  // const scaleArray = ["1","1.05"];
-  // const [currentColorIndex, setCurrentColorIndex] = useState(0);
-  // const [scaleIndex, setScaleIndex] = useState(0);
+  const colors = ["#FFFEC4","#CBFFA9"];
+  const scaleArray = ["1","1.05"];
+  const [currentColorIndex, setCurrentColorIndex] = useState(0);
+  const [scaleIndex, setScaleIndex] = useState(0);
 
-  // useEffect(() => {
-  //   const timer = setTimeout(() => {
-  //     const nextIndex = (currentColorIndex + 1) % colors.length;
-  //     setCurrentColorIndex(nextIndex);
-  //   }, 700);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      const nextIndex = (currentColorIndex + 1) % colors.length;
+      setCurrentColorIndex(nextIndex);
+    }, 700);
 
-  //   return () => clearTimeout(timer);
-  // }, [currentColorIndex, colors]);
+    return () => clearTimeout(timer);
+  }, [currentColorIndex, colors]);
 
-  // useEffect(() => {
-  //   const timer = setTimeout(() => {
-  //     const nextIndex = (scaleIndex + 1) % scaleArray.length;
-  //     setScaleIndex(nextIndex);
-  //   }, 700);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      const nextIndex = (scaleIndex + 1) % scaleArray.length;
+      setScaleIndex(nextIndex);
+    }, 700);
 
-  //   return () => clearTimeout(timer);
-  // }, [scaleIndex, scaleArray]);
+    return () => clearTimeout(timer);
+  }, [scaleIndex, scaleArray]);
 
-  // const buttonColor = colors[currentColorIndex];
-  // const scale = scaleArray[scaleIndex];
+  const buttonColor = colors[currentColorIndex];
+  const scale = scaleArray[scaleIndex];
 
   return (
     <>
       <div className='wrap-container' id='home'>
         <Fade bottom>
         <span>
-          {/* <Link to='problem-statement' spy={true} smooth={true} offset={-200} duration={500}><button className='register' style={{'width':'230px','backgroundColor': buttonColor,'color':'darkgreen','transition':'0.3s ease','scale':scale}}>Problem Statement</button></Link> */}
           <div className='content-container' style={{"marginTop":"15px"}}> 
           <span className='highlight'>
             <p><span className='highlighted'>AlgoZenith</span>,</p>
@@ -56,6 +55,14 @@ export default function Home() {
             <Link to="events" spy={true} smooth={true} offset={-100} duration={500}>
               <button className='register'>Events</button>
             </Link>
+            </span>
+          </div>
+
+          <div className='content-container' style={{"marginTop":"15px"}}> 
+          <span className='highlight'>
+            <p><span className='highlighted'>TechVista</span>,</p>
+            <p className='sub-head' style={{"fontSize":"1.5rem"}}>2 Day Event on Placement.</p>
+            <RouteLink to='/register' spy={true} smooth={true} offset={-200} duration={500}><button className='register' style={{'width':'230px','backgroundColor': buttonColor,'color':'darkgreen','transition':'0.3s ease','scale':scale}}>Click here to Register Now!</button></RouteLink>
             </span>
           </div>
         </span>
