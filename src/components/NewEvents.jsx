@@ -31,9 +31,9 @@ export default function newEvents(props) {
                 <li><strong>Time:</strong> 1.30 PM</li>
                 <li><strong>Venue:</strong> Seminar Hall 108</li>
               </ul>
-              <Link to='/register' className='btn-wrap'>
+              {/* <Link to='/register' className='btn-wrap'>
                 <button className='register-btn' style={{'display':props.display}}  >Register</button>
-              </Link>
+              </Link> */}
             </div>
           </Fade>
         </div>

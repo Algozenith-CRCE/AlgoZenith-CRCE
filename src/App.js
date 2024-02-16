@@ -11,7 +11,7 @@ import { Analytics } from '@vercel/analytics/react';
 
 
 import Navbar from './components/Navbar'
-import Home from './components/Home'
+import Hero from './components/Hero'
 import Objective from './components/Objective';
 import Events from './components/Events';
 import Footer from './components/Footer';
@@ -32,7 +32,7 @@ function App() {
         <Route exact path='/' element={
           <>
               <Navbar/>
-              <Home />
+              <Hero />
               <Fade bottom>
                 <Objective />
                 <Events />
@@ -42,21 +42,12 @@ function App() {
               <Footer />
           </>
         }/>
-        {/* <Route exact path='/register' element={
+        <Route exact path='/register' element={
           <>
             <NotFound />
             <Navigate to="/"/>
           </>
-        }/>*/}
-        <Route exact path='/register' element={
-          <>
-            <BackBtn />
-            <Fade bottom>
-              <NewEvents display='none' margin='80px'/>
-              <Register />
-            </Fade>
-          </>
-        }/> 
+        }/>
         <Route path="*" element={
           <>
             <NotFound />
